@@ -1,8 +1,8 @@
 .builder {
     height: 100%;
     display: grid;
-    grid-template-columns: 50px 250px 5px auto;
-    grid-template-rows: auto 5px 150px;
+    grid-template-columns: 50px 250px 5px calc(100vw - 305px);
+    grid-template-rows: calc(100vh - 215px) 5px 150px;
     background-color: #FB923C;
 }
 
@@ -14,6 +14,7 @@
 
 .toolkit {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     grid-column: 2;
@@ -26,12 +27,18 @@
     margin-bottom: 0px;
     margin-right: 2px;
     padding: 5px;
+    min-height: 85px;
     display: grid;
     grid-template-columns: 75px 5px auto;
     grid-template-rows: 30px auto;
     background-color: var(--rarity_color);
     border-radius: 5px;
     overflow: hidden;
+    transition: 0.3s;
+}
+
+.bee_card:hover {
+    filter: brightness(115%);
 }
 
 .bee_card > img {
