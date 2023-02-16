@@ -1,0 +1,38 @@
+{
+    "common": {
+        "name": "Common",
+        "color": {
+            "hive": "#9C6B29"
+        }
+    },
+    "rare": {
+        "name": "Rare",
+        "color": {
+            "hive": "#D3D5DB"
+        }
+    },
+    "epic": {
+        "name": "Epic",
+        "color": {
+            "hive": "#D2B110"
+        }
+    },
+    "legendary": {
+        "name": "Legendary",
+        "color": {
+            "hive": "#49EED9"
+        }
+    },
+    "mythic": {
+        "name": "Mythic",
+        "color": {
+            "hive": "#A48CE0"
+        }
+    },
+    "event": {
+        "name": "Event",
+        "color": {
+            "hive": "#96DE64"
+        }
+    }
+}

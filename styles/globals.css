@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body style */
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+	overflow-x: hidden;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+main {
+	min-height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
+}
+
+/* global styles */
+
+span.header_offset {
+    display: block;
+    position: relative;
+    top: -30px;
+	visibility: hidden;
+}

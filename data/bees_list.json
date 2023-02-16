@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Basic Bee",
+        "description": "An ordinary bee. Well rounded and hard working!",
+        "rarity": "common",
+        "images": {
+            "skin": {
+                "path": "/bees/basic_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/basic_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "name": "Bomber Bee",
+        "description": "This crafty bee makes bombs which collect pollen from all nearby flowers.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/bomber_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/bomber_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "name": "Brave Bee",
+        "description": "This loyal bee will do anything to protect its owner.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/brave_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/brave_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    }
+]
