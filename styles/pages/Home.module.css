@@ -61,10 +61,48 @@
     text-align: center;
 }
 
-.hive {
+.body {
     grid-column: 4;
     grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FDBA74;
+    overflow: hidden;
+}
+
+.body_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 8px;
+}
+
+.hive {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #FB923C;
+    border-radius: 15px;
+}
+
+.hive > h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.hive > svg {
+    height: 100%;
+}
+
+.hive > svg > path {
+    fill: #fed7aa;
 }
 
 .terminal {
