@@ -1,5 +1,6 @@
 [
     {
+        "id": "basic_bee",
         "name": "Basic Bee",
         "description": "An ordinary bee. Well rounded and hard working!",
         "rarity": "common",
@@ -17,6 +18,7 @@
         }
     },
     {
+        "id": "bomber_bee",
         "name": "Bomber Bee",
         "description": "This crafty bee makes bombs which collect pollen from all nearby flowers.",
         "rarity": "rare",
@@ -34,6 +36,7 @@
         }
     },
     {
+        "id": "brave_bee",
         "name": "Brave Bee",
         "description": "This loyal bee will do anything to protect its owner.",
         "rarity": "rare",
@@ -45,6 +48,474 @@
             },
             "hive": {
                 "path": "/bees/brave_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "bumble_bee",
+        "name": "Bumble Bee",
+        "description": "A mellow fellow who moves a little slow, but works harder and longer than others.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/bumble_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/bumble_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "cool_bee",
+        "name": "Cool Bee",
+        "description": "A sarcastic bee who's a little better than the others. Sometimes boosts pollen from Blue flowers.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/cool_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/cool_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "hasty_bee",
+        "name": "Hasty Bee",
+        "description": "A quick bee who always zips arounds. Sometimes it even makes YOU move faster.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/hasty_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/hasty_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "looker_bee",
+        "name": "Looker Bee",
+        "description": "This silent bee is always watching and gaining valuable insights.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/looker_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/looker_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "rad_bee",
+        "name": "Rad Bee",
+        "description": "A stylish bee with a taste for red flowers. Everyone wants to be this bee.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/rad_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/rad_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "rascal_bee",
+        "name": "Rascal Bee",
+        "description": "A mischievous bee who moves quick and hits hard. Keep an eye out on this one.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/rascal_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/rascal_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "stubborn_bee",
+        "name": "Stubborn Bee",
+        "description": "A hardheaded bee who can't be bossed around. It tells others where to go.",
+        "rarity": "rare",
+        "images": {
+            "skin": {
+                "path": "/bees/stubborn_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/stubborn_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "bubble_bee",
+        "name": "Bubble Bee",
+        "description": "As a larva, this bee lived in the ocean. It loves Blue flowers cause they remind it of home.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/bubble_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/bubble_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "bucko_bee",
+        "name": "Bucko Bee",
+        "description": "Leader of the Blue bees, and a long time rival of Riley Bee. Its tenacity is its greatest strength.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/bucko_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/bucko_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "commander_bee",
+        "name": "Commander Bee",
+        "description": "A strong, no-nonsense bee who stays level-headed when things get rough.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/commander_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/commander_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "demo_bee",
+        "name": "Demo Bee",
+        "description": "An elite Bomber Bee who has worked its way up the ranks. It is an expert in explosives.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/demo_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/demo_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "exhausted_bee",
+        "name": "Exhausted Bee",
+        "description": "This bee suffers from insomnia. It moves slowly, but it never has to sleep.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/exhausted_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/exhausted_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "fire_bee",
+        "name": "Fire Bee",
+        "description": "As an egg, this bee was accidentally left in the trunk of a car in the middle of the summer for over 3 days!",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/fire_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/fire_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "frosty_bee",
+        "name": "Frosty Bee",
+        "description": "A bee made of snow. It magically came to life after someone put a top hat on its head.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/frosty_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/frosty_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "honey_bee",
+        "name": "Honey Bee",
+        "description": "A satisfied bee always full with the finest honey. If you're Iucky it will share some.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/honey_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/honey_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "rage_bee",
+        "name": "Rage Bee",
+        "description": "A very angry bee who has been wronged its whole life. It harnesses its rage to become more powerful.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/rage_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/rage_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "riley_bee",
+        "name": "Riley Bee",
+        "description": "Leader of the Red bees, and a long time rival of Bucko Bee. Its fiery nature has elevated it above the rest.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/riley_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/riley_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "shocked_bee",
+        "name": "Shocked Bee",
+        "description": "This bee is startled by everything it comes acrossed [sic]. It has learned special talents to cope.",
+        "rarity": "epic",
+        "images": {
+            "skin": {
+                "path": "/bees/shocked_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/shocked_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "baby_bee",
+        "name": "Baby Bee",
+        "description": "This little bee isn't very good at bee tasks yet, but it's guaranteed to bring you joy (and luck).",
+        "rarity": "legendary",
+        "images": {
+            "skin": {
+                "path": "/bees/baby_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/baby_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "carpenter_bee",
+        "name": "Carpenter Bee",
+        "description": "A bee with a knack for construction. It built its own body out of wood.",
+        "rarity": "legendary",
+        "images": {
+            "skin": {
+                "path": "/bees/carpenter_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/carpenter_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "demon_bee",
+        "name": "Demon Bee",
+        "description": "A powerful bee with magical powers fueled by pure hatred.",
+        "rarity": "legendary",
+        "images": {
+            "skin": {
+                "path": "/bees/demon_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/demon_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "diamond_bee",
+        "name": "Diamond Bee",
+        "description": "An extremely wealthy and pompous bee who has the money and talent to justify its attitude.",
+        "rarity": "legendary",
+        "images": {
+            "skin": {
+                "path": "/bees/diamond_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/diamond_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "lion_bee",
+        "name": "Lion Bee",
+        "description": "Half lion, half bee. This is the king of both the jungle and bee hive.",
+        "rarity": "legendary",
+        "images": {
+            "skin": {
+                "path": "/bees/lion_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/lion_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "music_bee",
+        "name": "Music Bee",
+        "description": "This bee's buzz is so beautiful it can bring anyone to tears. It uses this gift to motivate others.",
+        "rarity": "legendary",
+        "images": {
+            "skin": {
+                "path": "/bees/music_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/music_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "ninja_bee",
+        "name": "Ninja Bee",
+        "description": "This bee trained vigorously for years to become the swiftest bee that has ever lived.",
+        "rarity": "legendary",
+        "images": {
+            "skin": {
+                "path": "/bees/ninja_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/ninja_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "shy_bee",
+        "name": "Shy Bee",
+        "description": "This talented bee doesn't like to socialize, it just wants to work and be left alone.",
+        "rarity": "legendary",
+        "images": {
+            "skin": {
+                "path": "/bees/shy_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/shy_hive.png",
                 "width": 126,
                 "height": 126
             }

@@ -16,7 +16,7 @@ const font_sono = Sono({subsets: ["latin"], variable: "--font-sono"});
 const Home: NextPageLayout = () => {
 
 	const [hive_slots, set_hive_slots] = useState({data: new Array(hive_dimension.hive_columns * hive_dimension.hive_rows).fill(undefined).map((none, hive_index) => ({hive_id: hive_index, hive_bee: undefined, hive_level: undefined} as HiveSlot)), updated: Date.now()});
-	const [bee_drag,  set_bee_drag]  = useState({bee_dragged: undefined} as {bee_dragged: string | undefined});
+	const [bee_drag,  set_bee_drag]    = useState({bee_dragged: undefined} as {bee_dragged: string | undefined});
 
 	const hive_height       = hive_dimension.hive_width * (Math.sqrt(3) / 2);
 	const hive_width_total  = (hive_dimension.hive_columns - 1) * (hive_dimension.hive_width * (3/4) + hive_dimension.hive_gap * (Math.sqrt(3) / 2)) + hive_dimension.hive_width;
