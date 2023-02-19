@@ -125,10 +125,15 @@
     z-index: 2;
 }
 
-.hive > svg > g > path {
-    fill: #fed7aa;
+.hive > svg > g > path:not([data-gifted="true"]) {
+    fill: #FED7AA;
     stroke: #FB923C;
     stroke-width: 3px;
+}
+
+.hive > svg > g > path[data-gifted="true"] {
+    stroke: #FFFF14;
+    stroke-width: 4px;
 }
 
 .hive > svg > g > text {

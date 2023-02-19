@@ -17,7 +17,7 @@ const BeeHive: NextPageLayout<{hive_data: HiveSlot, hive_width: number, coordina
     const hive_bee = bees_list.filter(bee_data => bee_data.id === hive_data.hive_bee)[0];
     const hive_background = hive_bee !== undefined ? bees_rarity[hive_bee.rarity as keyof typeof bees_rarity].color.hive : undefined;
 	return (
-		<path style={{fill: hive_background}} d={`M${hive_anchors.map((anchor_coordinate) => `${coordinate_x + anchor_coordinate.offset_x},${coordinate_y + anchor_coordinate.offset_y}`).join(" ")}z`} data-hive={hive_data.hive_id}/>
+		<path style={{fill: hive_background}} d={`M${hive_anchors.map((anchor_coordinate) => `${coordinate_x + anchor_coordinate.offset_x},${coordinate_y + anchor_coordinate.offset_y}`).join(" ")}z`} data-hive={hive_data.hive_id} data-gifted={hive_data.hive_gifted} />
 	)
 };
 

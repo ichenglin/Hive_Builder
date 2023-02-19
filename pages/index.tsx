@@ -15,7 +15,7 @@ const font_sono = Sono({subsets: ["latin"], variable: "--font-sono"});
 
 const Home: NextPageLayout = () => {
 
-	const [hive_slots, set_hive_slots] = useState({data: new Array(hive_dimension.hive_columns * hive_dimension.hive_rows).fill(undefined).map((none, hive_index) => ({hive_id: hive_index, hive_bee: undefined, hive_level: undefined} as HiveSlot)), updated: Date.now()});
+	const [hive_slots, set_hive_slots] = useState({data: new Array(hive_dimension.hive_columns * hive_dimension.hive_rows).fill(undefined).map((none, hive_index) => ({hive_id: hive_index} as HiveSlot)), updated: Date.now()});
 	const [bee_drag,  set_bee_drag]    = useState({bee_dragged: undefined} as {bee_dragged: string | undefined});
 
 	const hive_height       = hive_dimension.hive_width * (Math.sqrt(3) / 2);
@@ -43,7 +43,7 @@ const Home: NextPageLayout = () => {
 		console.log(`${dragged_bee} to ${dragged_slot}`);
 		// update bee in hive
 		const hive_slots_new = hive_slots.data;
-		hive_slots_new[dragged_slot] = {hive_id: dragged_slot, hive_bee: dragged_bee, hive_level: 25};
+		hive_slots_new[dragged_slot] = {hive_id: dragged_slot, hive_bee: dragged_bee, hive_level: 25, hive_gifted: false};
 		set_hive_slots({data: hive_slots_new, updated: Date.now()});
 		console.log(hive_slots);
 	}
@@ -76,8 +76,8 @@ const Home: NextPageLayout = () => {
 								return (<g key={hive_index}>
 									<BeeHive hive_data={hive_data} hive_width={hive_dimension.hive_width} coordinate_x={hive_x} coordinate_y={hive_y} />
 									{hive_bee !== undefined ? <>
-										<image href={hive_bee.images.hive.path} x={hive_x + 15} y={hive_y + 10} width={70} height={70}/>
-										<text x={hive_x} y={hive_y + (hive_height / 2) + 10}>{hive_data.hive_level}</text>
+										<image href={hive_bee.images.hive.path} x={hive_x + 15} y={hive_y + 10} width={70} height={70} data-hive={hive_data.hive_id} />
+										<text x={hive_x} y={hive_y + (hive_height / 2) + 10} data-hive={hive_data.hive_id} >{hive_data.hive_level}</text>
 									</> : <></>}
 								</g>);
 							})}
@@ -106,9 +106,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 }
 
 export interface HiveSlot {
-	hive_id:    number,
-	hive_bee:   string | undefined,
-	hive_level: number | undefined
+	hive_id:     number,
+	hive_bee:    string  | undefined,
+	hive_level:  number  | undefined,
+	hive_gifted: boolean | undefined
 };
 
 export default Home;
