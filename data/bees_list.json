@@ -520,5 +520,311 @@
                 "height": 126
             }
         }
+    },
+    {
+        "id": "buoyant_bee",
+        "name": "Buoyant Bee",
+        "description": "Just like a balloon, nothing can keep this bee down. It's always ready to party.",
+        "rarity": "mythic",
+        "images": {
+            "skin": {
+                "path": "/bees/buoyant_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/buoyant_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "fuzzy_bee",
+        "name": "Fuzzy Bee",
+        "description": "This unkempt ball of fluff is actually a bee. Its fur aids in the pollination of flowers.",
+        "rarity": "mythic",
+        "images": {
+            "skin": {
+                "path": "/bees/fuzzy_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/fuzzy_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "precise_bee",
+        "name": "Precise Bee",
+        "description": "This sharpshooting bee is always on point and expects the same of you.",
+        "rarity": "mythic",
+        "images": {
+            "skin": {
+                "path": "/bees/precise_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/precise_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "spicy_bee",
+        "name": "Spicy Bee",
+        "description": "Some like it hot - this bee likes it scorching. Even the honey it makes is spicy.",
+        "rarity": "mythic",
+        "images": {
+            "skin": {
+                "path": "/bees/spicy_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/spicy_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "tadpole_bee",
+        "name": "Tadpole Bee",
+        "description": "A tiny amphibious bee who wants to become a frog when it grows up.",
+        "rarity": "mythic",
+        "images": {
+            "skin": {
+                "path": "/bees/tadpole_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/tadpole_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "vector_bee",
+        "name": "Vector Bee",
+        "description": "A bee brought to life by an extremely complex trigonometric equation.",
+        "rarity": "mythic",
+        "images": {
+            "skin": {
+                "path": "/bees/vector_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/vector_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "bear_bee",
+        "name": "Bear Bee",
+        "description": "A friendly bee who transforms you into different bears!",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/bear_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/bear_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "cobalt_bee",
+        "name": "Cobalt Bee",
+        "description": "A superhero and defender of all things Blue! Together with Crimson Bee it works to unite bees of all colors.",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/cobalt_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/cobalt_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "crimson_bee",
+        "name": "Crimson Bee",
+        "description": "A superhero and defender of all things Red! Together with Cobalt Bee it works to unite bees of all colors.",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/crimson_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/crimson_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "digital_bee",
+        "name": "Digital Bee",
+        "description": "A virtual bee with malfunctioning AI. It corrupts the game itself.",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/digital_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/digital_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "festive_bee",
+        "name": "Festive Bee",
+        "description": "A jolly bee who loves giving gifts! It's purely motivated by the joy of others.",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/festive_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/festive_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "gummy_bee",
+        "name": "Gummy Bee",
+        "description": "A squishy bee who's sweet as sugar. Covers flowers in goo to grant you bonus honey!",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/gummy_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/gummy_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "photon_bee",
+        "name": "Photon Bee",
+        "description": "An entity made of pure light temporarily taking on the form of a bee.",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/photon_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/photon_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "puppy_bee",
+        "name": "Puppy Bee",
+        "description": "A playful bee who only cares about two things, its tennis ball and you!",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/puppy_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/puppy_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "tabby_bee",
+        "name": "Tabby Bee",
+        "description": "This affectionate bee was raised by cats. It becomes a better worker as it warms up to you.",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/tabby_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/tabby_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "vicious_bee",
+        "name": "Vicious Bee",
+        "description": "This cold-blooded bee takes great pleasure in inflicting pain.",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/vicious_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/vicious_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
+    },
+    {
+        "id": "windy_bee",
+        "name": "Windy Bee",
+        "description": "An ethereal bee as powerful and unpredictable as the weather.",
+        "rarity": "event",
+        "images": {
+            "skin": {
+                "path": "/bees/windy_skin.png",
+                "width": 126,
+                "height": 126
+            },
+            "hive": {
+                "path": "/bees/windy_hive.png",
+                "width": 126,
+                "height": 126
+            }
+        }
     }
 ]
