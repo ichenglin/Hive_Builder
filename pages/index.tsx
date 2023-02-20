@@ -37,15 +37,13 @@ const Home: NextPageLayout = () => {
 		set_bee_drag(bee_drag_new);
 		// check for selected hive
 		const hover_element = document.elementFromPoint(event.pageX, event.pageY);
-		console.log(hover_element);
 		if (!hover_element || !(hover_element as any).dataset || !(hover_element as any).dataset.hive) return;
 		const dragged_slot = parseInt((hover_element as any).dataset.hive) as number;
-		console.log(`${dragged_bee} to ${dragged_slot}`);
+		console.log(hover_element)
 		// update bee in hive
 		const hive_slots_new = hive_slots.data;
 		hive_slots_new[dragged_slot] = {hive_id: dragged_slot, hive_bee: dragged_bee, hive_level: 25, hive_gifted: false};
 		set_hive_slots({data: hive_slots_new, updated: Date.now()});
-		console.log(hive_slots);
 	}
 
 	return (
@@ -64,7 +62,7 @@ const Home: NextPageLayout = () => {
 			</div>
 			<div className={`${styles.body} ${font_sono.className} ${font_sono.variable}`}>
 				<div className={styles.body_grid}>
-					<div className={styles.hive}>
+					<div className={`${styles.hive} ${styles.container}`}>
 						<h3>Bee Swarm Hive Builder</h3>
 						<svg viewBox={`0 0 ${hive_width_total} ${hive_height_total}`}>
 							{hive_slots.data.map((hive_data, hive_index) => {
@@ -72,22 +70,15 @@ const Home: NextPageLayout = () => {
 								const hive_row    = Math.floor(hive_index / hive_dimension.hive_columns);
 								const hive_x      = hive_column * (hive_dimension.hive_width * (3/4) + hive_dimension.hive_gap * (Math.sqrt(3) / 2));
 								const hive_y      = (hive_dimension.hive_rows - hive_row - 1) * (hive_height + hive_dimension.hive_gap) + (hive_column % 2 === 0 ? (hive_dimension.hive_gap + hive_height) / 2 : 0);
-								const hive_bee    = bees_list.filter(bee_data => bee_data.id === hive_data.hive_bee)[0];
-								return (<g key={hive_index}>
-									<BeeHive hive_data={hive_data} hive_width={hive_dimension.hive_width} coordinate_x={hive_x} coordinate_y={hive_y} />
-									{hive_bee !== undefined ? <>
-										<image href={hive_bee.images.hive.path} x={hive_x + 15} y={hive_y + 10} width={70} height={70} data-hive={hive_data.hive_id} />
-										<text x={hive_x} y={hive_y + (hive_height / 2) + 10} data-hive={hive_data.hive_id} >{hive_data.hive_level}</text>
-									</> : <></>}
-								</g>);
+								return (<BeeHive hive_data={hive_data} hive_width={hive_dimension.hive_width} coordinate_x={hive_x} coordinate_y={hive_y} key={hive_index} />);
 							})}
 						</svg>
 					</div>
-					<div className={styles.hive_stats}>
-						Stats
+					<div className={`${styles.hive_stats} ${styles.container}`}>
+						<h3>Stats</h3>
 					</div>
-					<div className={styles.hive_credits}>
-						Credits
+					<div className={`${styles.hive_credits} ${styles.container}`}>
+						<h3>Credits and Instructions</h3>
 					</div>
 				</div>
 			</div>
