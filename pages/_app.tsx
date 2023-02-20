@@ -26,13 +26,6 @@ type AppPropsLayout = AppProps & {
 	Component: NextPageLayout
 }
 
-// custom types
-export enum BeeHiveType {
-	HIVE_CLEAR,
-	HIVE_CLASSIC,
-	HIVE_GIFTED
-};
-
 export default function App({ Component, pageProps }: AppPropsLayout) {
 	// custom page layout if available
 	const page_layout   = Component.getLayout ?? ((page) => page);

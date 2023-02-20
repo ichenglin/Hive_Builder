@@ -159,6 +159,14 @@
     background-color: #FDBA74;
 }
 
+.hidden {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0px;
+    left: 100vw;
+}
+
 /* components */
 
 .scrollable {

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GetServerSideProps } from "next";
 import Image from "next/image";
-import { BeeHiveType, NextPageLayout } from "./_app";
+import { NextPageLayout } from "./_app";
 import styles from "@/styles/pages/Home.module.css";
 import BeeHive from "@/components/home/bee_hive";
 
@@ -18,12 +18,19 @@ const Home: NextPageLayout = () => {
 	const [hive_slots, set_hive_slots] = useState({data: new Array(hive_dimension.hive_columns * hive_dimension.hive_rows).fill(undefined).map((none, hive_index) => ({hive_id: hive_index} as HiveSlot)), updated: Date.now()});
 	const [bee_drag,  set_bee_drag]    = useState({bee_dragged: undefined} as {bee_dragged: string | undefined});
 
+	useEffect(() => {
+		const hive_bees_saved = localStorage.getItem("hive_bees");
+		if (hive_bees_saved === null) return;
+		set_hive_slots({data: JSON.parse(hive_bees_saved), updated: Date.now()});
+	}, []);
+
 	const hive_height       = hive_dimension.hive_width * (Math.sqrt(3) / 2);
 	const hive_width_total  = (hive_dimension.hive_columns - 1) * (hive_dimension.hive_width * (3/4) + hive_dimension.hive_gap * (Math.sqrt(3) / 2)) + hive_dimension.hive_width;
 	const hive_height_total = (hive_dimension.hive_rows + 0.5) * (hive_height + hive_dimension.hive_gap) - hive_dimension.hive_gap;
 
 	function bee_card_drag(event: DragEvent) {
-		event.dataTransfer?.setDragImage((event.target as Element).children[0], 0, 0);
+		//event.dataTransfer?.setDragImage((event.target as Element), 0, 0);
+		event.dataTransfer?.setDragImage(document.getElementById("drag_icon") as HTMLElement, 15, 15);
 		const bee_drag_new = bee_drag;
 		bee_drag_new.bee_dragged = (event.target as any).dataset.bee;
 		set_bee_drag(bee_drag_new);
@@ -39,11 +46,11 @@ const Home: NextPageLayout = () => {
 		const hover_element = document.elementFromPoint(event.pageX, event.pageY);
 		if (!hover_element || !(hover_element as any).dataset || !(hover_element as any).dataset.hive) return;
 		const dragged_slot = parseInt((hover_element as any).dataset.hive) as number;
-		console.log(hover_element)
 		// update bee in hive
 		const hive_slots_new = hive_slots.data;
 		hive_slots_new[dragged_slot] = {hive_id: dragged_slot, hive_bee: dragged_bee, hive_level: 25, hive_gifted: false};
 		set_hive_slots({data: hive_slots_new, updated: Date.now()});
+		localStorage.setItem("hive_bees", JSON.stringify(hive_slots.data));
 	}
 
 	return (
@@ -84,6 +91,9 @@ const Home: NextPageLayout = () => {
 			</div>
 			<div className={`${styles.terminal} ${styles.scrollable}`}>
 
+			</div>
+			<div className={styles.hidden}>
+				<Image id="drag_icon" src="/eggs/basic_egg.webp" alt="Bee Egg" width="30" height="30" />
 			</div>
 		</section>
 	);
